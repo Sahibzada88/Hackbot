@@ -9,7 +9,7 @@ from langchain_core.vectorstores import InMemoryVectorStore
 from langchain_openai import OpenAIEmbeddings
 
 def pdf_database(question):
-    file_path = "files/pdf/"
+    file_path = "/"
     pdf_files = [os.path.join(file_path,f) for f in os.listdir(file_path) if f.endswith('.pdf')]
 
     pages = []
